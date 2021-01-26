@@ -1,0 +1,32 @@
+{
+  "name": "excel-course",
+  "version": "1.0.0",
+  "description": "Pure JS Excel Application",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Parselian/excel-course.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "excel"
+  ],
+  "author": "Vyacheslav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Parselian/excel-course/issues"
+  },
+  "homepage": "https://github.com/Parselian/excel-course#readme",
+  "private": false,
+  "devDependencies": {
+    "mini-css-extract-plugin": "^1.3.4",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
+}
