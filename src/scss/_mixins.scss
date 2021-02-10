@@ -1,0 +1,32 @@
+@mixin button($color: green) {
+  position: relative;
+  padding: 3px;
+  display: inline-block;
+  height: 24px;
+  min-width: 24px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  & i {
+    font-size: 18px;
+  }
+
+  &:active, &.active {
+    color: $color;
+  }
+
+  &:hover {
+    background-color: #eee;
+    cursor: pointer;
+  }
+}
+
+@mixin clear-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
