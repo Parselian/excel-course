@@ -1,0 +1,96 @@
+@import "variables";
+@import "mixins";
+
+.db {
+
+  &__header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $dashboard-header-height;
+    background: #ffffff;
+    -webkit-box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
+    -moz-box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
+    box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
+  }
+
+  &__new {
+    margin-top: $dashboard-header-height;
+    padding: 1.5rem;
+    background: #dadce0;
+  }
+
+  &__create {
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    background: #ffffff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #dadce0;
+    &:hover {
+      cursor: pointer;
+      color: green;
+      border-color: green;
+    }
+  }
+
+  &__view {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__table {
+    padding: 1rem;
+  }
+
+  &__list-header {
+    margin-bottom: 10px;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    color: #202124;
+  }
+
+  &__list {
+    @include clear-list()
+  }
+
+  &__record {
+    margin-bottom: 10px;
+    padding: 12px 14px 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      background: #e6f4ea;
+      border-radius: 25px;
+    }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #202124;
+      font-size: 14px;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -24,10 +24,6 @@
   },
   "homepage": "https://github.com/Parselian/excel-course#readme",
   "private": false,
-  "browserslist": [
-    "last 2 Chrome versions",
-    "last 2 Firefox versions"
-  ],
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
@@ -51,5 +47,13 @@
     "webpack": "^5.20.1",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "normalize.css": "^8.0.1"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions"
+  ]
 }
